@@ -1,0 +1,8 @@
+#iterationNumber	varNumber	clauseNumber	itertionTime
+1	1974	5599	0.05775s
+2	3328	5840	0.01698s
+3	4682	9540	0.01657s
+4	6036	13240	0.01675s
+5	7390	16940	0.01913s
+6	8744	7182	0.05574s
+This is the last UNSAT round.
