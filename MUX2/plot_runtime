@@ -1,0 +1,19 @@
+set terminal postscript enhanced color 'Times-Roman,25' 
+set output  "c7552-Base-Incre-runtime.eps" 
+set key left 
+set style data lines
+set logscale y
+set xlabel "Iteration"
+set ylabel "Runtime (s)"
+set size square
+set key invert 
+set key height 0.5
+set key width 0.5
+set key font "Times-Roman,15"
+set key samplen 2
+#set key box
+#set xrange [0:357]
+#set ytics 0,1000,4000
+#set yrange [0:3500]
+set size ratio 0.3
+plot  "c7552-nonincre.dat" using 1:4 title "Baseline" with linespoints  lc 0, "increIterationInfo.log" using 1:4 title "Incremental" with linespoints  lc -1
